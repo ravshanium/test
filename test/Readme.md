@@ -133,3 +133,15 @@ $ sudo apt-get install php-soap
 ravsh@ravsh-devOps ~/git_repo/yii1 $ php -S localhost:8889
 
 наш тест будет доступен по запросу в броузере http://localhost:8889/test/
+
+Добавлено:
+---------------------------------------
+/test/protected/controllers/BookShopController.php
+/test/protected/controllers/SoapClientController.php
+/test/protected/models/BookShop.php
+
+
+- сам сервис планировался по адресу /test/index.php?r=BookShop/service
+- Soap клиент, для тестирования работы сервиса по адресу: /test/index.php?r=SoapClient/test
+
+При тестировании пошли ошибки, разобраться с которыми пока не удалось. Поэтому тестовое задание не выполнено. нужно разбираться с Soap и реализацией SoapClient в php и реализацией CWebServiceAction в yii.
